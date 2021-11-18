@@ -10,13 +10,17 @@ function rodgers(number){
   }
 
   numberArray.forEach(function(num){
-    if (num.includes(beep)){
+    if (num.includes(boop || beep)){
+        finalArray.push("Boop!");
+      }
+    else if (num.includes(beep)){
       finalArray.push("Beep!");
     } else {
       finalArray.push(num);
     }
+    
   });
   return finalArray;
 }
 
-rodgers(10)
+rodgers(12)

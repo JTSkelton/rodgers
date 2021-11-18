@@ -16,6 +16,10 @@ Test 2: "It should replace any value containing 1 with the string "Beep!"
 Code: rodgers(10);
 Expected Output: [Beep!,2,3,4,5,6,7,8,9,Beep!]
 
+Test 3: "It should replace any value containing "2" or "1 and 2" with the string "Boop!"
+Code: rodgers(12);
+Expected Output: [Beep!,2,3,4,5,6,7,8,9,Beep!,Beep!,Boop!]
+
 ## Project Link
 https://github.com/JTSkelton/rodgers.git
 ## Technologies Used
