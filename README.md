@@ -8,11 +8,13 @@
 ## Tests
 Describe: rodgers()
 
-Test: "It should return an array between 0 and the user input"
+Test 1: "It should return an array between 0 and the user input"
 Code: rodgers(10);
 Expected Output: [1,2,3,4,5,6,7,8,9,10]
 
-Test:
+Test 2: "It should replace any value containing 1 with the string "Beep!"
+Code: rodgers(10);
+Expected Output: [Beep!,2,3,4,5,6,7,8,9,Beep!]
 
 ## Project Link
 https://github.com/JTSkelton/rodgers.git
