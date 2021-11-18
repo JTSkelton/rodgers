@@ -5,8 +5,16 @@
 ## Description
 #### This prject was created to show our understanding of basic arrays and looping.
 
-## Project Link
+## Tests
+Describe: rodgers()
 
+Test: "It should return an array between 0 and the user input"
+Code: rodgers(10);
+Expected Output: [1,2,3,4,5,6,7,8,9,10]
+
+Test:
+
+## Project Link
 https://github.com/JTSkelton/rodgers.git
 ## Technologies Used
 
