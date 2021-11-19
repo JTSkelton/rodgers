@@ -1,11 +1,17 @@
-function rodgers(number){
+//Utility Logic
+function numArray(number){
   numberArray = [];
-  finalArray = [];
-
   for (i = 0; i <= number; i++){
     numberArray.push(i.toString());
   }
+  return numberArray;
+  }
 
+//Business Logic
+
+function rodgers(number){
+  finalArray = [];
+  numberArray = numArray(number)
   numberArray.forEach(function(num){
     if (num.includes("3")){
         finalArray.push("Won't you be my neighbor?");
@@ -25,14 +31,10 @@ function rodgers(number){
 
 rodgers(23)
 
-// function rodgersRegEx(number) {
-//   numberArray = [];
-//   for (i = 0; i <= number; i++){
-//    numberArray.push(i);
-//  }
-//  numberArray = numberArray.join(" ");
-//  finalArray = numberArray.replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!")
-//  return finalArray;
-// }
+function rodgersRegEx(number) {
+  numberArray = numArray(number).join(" ");
+  finalArray = numberArray.replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!")
+  return finalArray;
+}
 
-// rodgersRegEx(103);
+rodgersRegEx(103);
