@@ -1,4 +1,5 @@
 //Utility Logic
+
 function numArray(number){
   numberArray = [];
   for (i = 0; i <= number; i++){
@@ -29,11 +30,18 @@ function rodgers(number){
   return finalArray;
 }
 
-rodgers(23)
 
-function rodgersRegEx(number) {
-  numberArray = numArray(number).join(" ").replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!");
-  return numberArray;
-}
 
-rodgersRegEx(103);
+// function rodgersRegEx(number) {
+//   numberArray = numArray(number).join(" ").replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!");
+//   return numberArray;
+// }
+
+$(document).ready(function(){
+  $("form.rodgers").submit(function(event){
+    event.preventDefault();
+    const number = $(".input").val();
+    $("#answer").html(rodgers(number));
+    // $(".numberList").html(rodgersRegEx(number));
+  });
+});
