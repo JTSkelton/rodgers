@@ -4,11 +4,9 @@ function rodgers(number){
   const beep = "1"
   const boop = "2"
   const neighbor = "3"
-
   for (i = 0; i <= number; i++){
     numberArray.push(i.toString());
   }
-
   numberArray.forEach(function(num){
     if (num.includes(neighbor)){
         finalArray.push("Won't you be my neighbor?");
@@ -18,12 +16,22 @@ function rodgers(number){
       }
     else if (num.includes(beep)){
       finalArray.push("Beep!");
-    } else {
+    } 
+    else {
       finalArray.push(num);
     }
-    
   });
   return finalArray;
 }
 
-rodgers(23)
+// function rodgersRegEx(number) {
+//   numberArray = [];
+//   for (i = 0; i <= number; i++){
+//    numberArray.push(i);
+//  }
+//  numberArray = numberArray.join(" ");
+//  finalArray = numberArray.replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!")
+//  return finalArray;
+// }
+
+// rodgersRegEx(103);
