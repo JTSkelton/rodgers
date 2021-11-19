@@ -32,9 +32,8 @@ function rodgers(number){
 rodgers(23)
 
 function rodgersRegEx(number) {
-  numberArray = numArray(number).join(" ");
-  finalArray = numberArray.replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!")
-  return finalArray;
+  numberArray = numArray(number).join(" ").replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!");
+  return numberArray;
 }
 
 rodgersRegEx(103);
