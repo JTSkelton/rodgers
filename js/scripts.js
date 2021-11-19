@@ -1,28 +1,29 @@
 function rodgers(number){
   numberArray = [];
   finalArray = [];
-  const beep = "1"
-  const boop = "2"
-  const neighbor = "3"
+
   for (i = 0; i <= number; i++){
     numberArray.push(i.toString());
   }
+
   numberArray.forEach(function(num){
-    if (num.includes(neighbor)){
+    if (num.includes("3")){
         finalArray.push("Won't you be my neighbor?");
       }
-    else if (num.includes(boop)){
+    else if (num.includes("2")){
         finalArray.push("Boop!");
       }
-    else if (num.includes(beep)){
+    else if (num.includes("1")){
       finalArray.push("Beep!");
-    } 
-    else {
+    } else {
       finalArray.push(num);
     }
+    
   });
   return finalArray;
 }
+
+rodgers(23)
 
 // function rodgersRegEx(number) {
 //   numberArray = [];
