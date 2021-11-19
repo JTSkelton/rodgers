@@ -10,7 +10,10 @@ function rodgers(number){
   }
 
   numberArray.forEach(function(num){
-    if (num.includes(boop || beep)){
+    if (num.includes(neighbor)){
+        finalArray.push("Won't you be my neighbor?");
+      }
+    else if (num.includes(boop)){
         finalArray.push("Boop!");
       }
     else if (num.includes(beep)){
@@ -23,4 +26,4 @@ function rodgers(number){
   return finalArray;
 }
 
-rodgers(12)
+rodgers(23)

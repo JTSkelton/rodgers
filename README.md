@@ -20,6 +20,10 @@ Test 3: "It should replace any value containing "2" or "1 and 2" with the string
 Code: rodgers(12);
 Expected Output: [Beep!,2,3,4,5,6,7,8,9,Beep!,Beep!,Boop!]
 
+Test 4: "It should replace any value containing "3" with the string "Won't you be my neighbor?"
+Code: rodgers(23);
+Expected Output: [Beep!,2,3,4,5,6,7,8,9,Beep!,Beep!,Boop!,Won't you be my neighbor?,Beep!,Beep!,Beep!,Beep!,Beep!,Beep!,Boop!,Boop!,Boop!,"Won't you be my neighbor?"]
+
 ## Project Link
 https://github.com/JTSkelton/rodgers.git
 ## Technologies Used
