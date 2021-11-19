@@ -15,15 +15,15 @@ function rodgers(number){
   numberArray = numArray(number)
   numberArray.forEach(function(num){
     if (num.includes("3")){
-        finalArray.push("<li>" + "Won't you be my neighbor?" + "</li>");
+        finalArray.push("<li>" + num + ": " + "Won't you be my neighbor?" + "</li>");
       }
     else if (num.includes("2")){
-        finalArray.push("<li>" + "Boop!" + "</li>");
+        finalArray.push("<li>" + num + ": " + "Boop!" + "</li>");
       }
     else if (num.includes("1")){
-      finalArray.push("<li>" + "Beep!" + "</li>");
+      finalArray.push("<li>" + num + ": " + "Beep!" + "</li>");
     } else {
-      finalArray.push("<li>" + num + "</li>");
+      finalArray.push("<li>" + num + ": " + num + "</li>");
     }
     
   });
