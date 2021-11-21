@@ -47,7 +47,7 @@ https://github.com/JTSkelton/rodgers.git
 4) To open in your browser, select index.html and open with the browser of your choice.
 
 ## Known Bugs
-1) Can't figure out how to get body and html CSS styles to correctly format for a gradient color change
+
 * No known bugs
 ## License
 
