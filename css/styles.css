@@ -1,11 +1,11 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body, html{
+body{
+  height:auto;
+  min-height: 100%;
   width: 100%;
-  height: 100%;
-  background-color: blanchedalmond;
-  background: linear-gradient(to top, #f8d0a8, #ffffff)
+  background: linear-gradient(to top, #f8d0a8, #ffffff);
+  background-repeat: none;
 }
 
 .jumbotron{
@@ -22,9 +22,13 @@ body, html{
   padding: none;
 }
 
-.title, .input, .results{
-  display: flex;
-  justify-content: center;
+.rodgers, .results{
+  position: relative;
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(255, 255, 255);
+  padding: 10px;
+  text-align: center;
 }
 
 .lg-btn{
