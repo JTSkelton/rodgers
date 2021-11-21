@@ -31,7 +31,7 @@ function rodgers(number){
 }
 
 
-
+// RegEx Practice Function
 // function rodgersRegEx(number) {
 //   numberArray = numArray(number).join(" ").replace(/\d*3\d*/g,"Won't you be my neighbor?").replace(/\d*2\d*/g,"Boop!").replace(/\d*1\d*/g,"Beep!");
 //   return numberArray;
@@ -42,6 +42,6 @@ $(document).ready(function(){
     event.preventDefault();
     const number = $(".input").val();
     $("#answer").html(rodgers(number));
-    // $(".numberList").html(rodgersRegEx(number));
+    // $("#answer").html(rodgersRegEx(number));
   });
 });
