@@ -3,7 +3,7 @@
 #### By Jack Skelton
 
 ## Description
-#### This prject was created to show our understanding of basic arrays and looping.
+#### This project was created to show my understanding of basic arrays and looping.
 
 ## Tests
 Describe: rodgers()
